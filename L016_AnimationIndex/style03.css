@@ -1,0 +1,69 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    position: relative;
+    animation: anim 5s infinite alternate;
+    -webkit-animation: anim 5s infinite alternate;
+    -o-animation: anim 5s;
+
+}
+
+/*anim为指定的名称*/
+@keyframes anim {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px
+    }
+    25% {
+        background: blue;
+        left: 200px;
+        top: 0px
+    }
+    50% {
+        background: green;
+        left: 200px;
+        top: 200px
+    }
+    75% {
+        background: orange;
+        left: 0px;
+        top: 200px
+    }
+    100% {
+        background: pink;
+        left: 0px;
+        top: 0px
+    }
+}
+
+@-webkit-keyframes anim {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px
+    }
+    25% {
+        background: blue;
+        left: 200px;
+        top: 0px
+    }
+    50% {
+        background: green;
+        left: 200px;
+        top: 200px
+    }
+    75% {
+        background: orange;
+        left: 0px;
+        top: 200px
+    }
+    100% {
+        background: pink;
+        left: 0px;
+        top: 0px
+    }
+}
+

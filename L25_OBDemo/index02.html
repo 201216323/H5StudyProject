@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>History对象</title>
+</head>
+<body>
+<form>
+    <input type="text" id="username">
+    <button id="btn" onclick="safe()">登陆</button>
+</form>
+<script>
+    function safe(){
+        var name = document.getElementById("username").value;
+        if(name == "hello"){
+            //往下走是1，往上走是-1
+            history.go(-1);
+        }else{
+            alert("输入错误。")
+        }
+    }
+</script>
+
+</body>
+</html>

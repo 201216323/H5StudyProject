@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JSDOM对象控制HTML元素详解-1</title>
+</head>
+<body>
+<p name="pn">hello</p>
+
+<p name="pn">hello</p>
+
+<p name="pn">hello</p>
+
+<p name="pn">hello</p>
+
+<p name="pn">hello</p>
+
+<a id="aid" title="得到了a标签的属性">hello</a>
+
+<ul><li>1</li><li>2</li><li>3</li></ul>
+
+
+<script>
+    function getName() {
+//        这里getElementsByTagName和getElementsByName效果一样
+//        var count = document.getElementsByTagName("p");
+        var count = document.getElementsByName("pn");
+//        alert(count.length);长度是4
+        var p = count[0];
+        p.innerHTML = "World";
+    }
+//        getName();    //方法1：
+    function getAttr() {
+        var anode = document.getElementById("aid");
+        var attr = anode.getAttribute("title");
+        alert(attr);
+    }
+//       getAttr();    // 方法2
+
+    function setAttr() {
+        var anode = document.getElementById("aid");
+        anode.setAttribute("title", "动态设置a的title属性");
+        var attr = anode.getAttribute("title");
+        alert(attr);
+    }
+//        setAttr();    //方法3
+
+    function getChildNode() {
+        var childnode = document.getElementsByTagName("ul")[0].childNodes;
+//        alert(childnode.length)
+        alert(childnode[1].nodeType);
+    }
+    getChildNode();   //方法4
+</script>
+</body>
+</html>

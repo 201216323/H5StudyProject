@@ -1,0 +1,24 @@
+#tb{
+    /*外边框折叠方式*/
+    border-collapse: collapse;
+    /*设置宽度*/
+    width: 500px;
+}
+
+/*设置th单元格和td单元格的边框*/
+#tb td,#tb th{
+    border: 1px solid aqua;
+    padding: 10px;
+}
+
+/*设置th的文字排列方式，背景颜色和字体颜色，不加#tb效果也是一样的*/
+#tb th{
+    text-align: left;
+    background-color: gray;
+    color: #ffffff;
+}
+/*指定tb表中，类名为alt的tr中td的背景颜色以及字体颜色*/
+#tb tr.alt td{
+    color: red;
+    background-color: aquamarine;
+}

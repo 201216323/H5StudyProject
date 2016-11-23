@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /*这里只写了title但没有具体指定title是哪一个值，
+        默认所有的title属性都会使用字体红色这个属性
+         */
+        [title]{
+           color: red;
+        }
+        [href="http://www.baidu.com"]{
+            font-size: 30px;
+            text-decoration: none;
+        }
+        /*只有title里面包含title这个单词的时候才会生效，
+        就是模糊匹配的问题。
+        */
+        [title~="title"]{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<p title="tit">this is one </p>
+<p title="title">this is one </p>
+<p title="t">this is one </p>
+<p title="hello title hello">this is one </p>
+<a href="http://www.baidu.com">度娘搜索</a>
+</body>
+</html>

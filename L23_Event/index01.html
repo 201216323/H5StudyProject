@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS事件详解-事件处理</title>
+</head>
+<body>
+<div id="div">
+    <button id="btn1">按钮</button>
+</div>
+<script>
+    var btn1 = document.getElementById("btn1");
+    if (btn1.addEventListener) {
+        btn1.addEventListener("click", demo);
+    } else if (btn1.attachEvent) {
+        btn1.attachEvent("onclick", demo);
+    } else {
+        btn1.onclick = demo();
+    }
+
+    function demo() {
+        alert("hello");
+    }
+</script>
+
+</body>
+</html>

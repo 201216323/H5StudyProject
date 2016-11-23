@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>location对象</title>
+</head>
+<body>
+<button id="btn" onclick="getLoc()">按钮</button>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<button id="btn2" onclick="loadNew()">加载新的文档</button>
+<script>
+    function getLoc() {
+        document.getElementById("p1").innerHTML = "web主机名称：" + window.location.hostname;
+        document.getElementById("p2").innerHTML = "当前页面路径和文件名：" + window.location.pathname;
+        document.getElementById("p3").innerHTML = "主机的端口：" + window.location.port;
+        document.getElementById("p4").innerHTML = "所使用的web协议：" + window.location.protocol;
+        document.getElementById("p5").innerHTML = "当前页面url：" + window.location.href;
+    }
+
+    function loadNew(){
+        window.location.assign("http://www.baidu.com");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.p1 {
+    width: 200px;
+    background-color: red;
+    /*可以用这个属性设置行间距*/
+    line-height: normal;
+}
+.p2 {
+    width: 200px;
+    background-color: green;
+    line-height: 200%;
+}
+.p3 {
+    /*max-width*/
+    max-width: 100px;
+    background-color: blue;
+    line-height: 50%;
+}
+

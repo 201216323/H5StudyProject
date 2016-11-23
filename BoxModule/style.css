@@ -1,0 +1,59 @@
+/*body{*/
+/*margin: 0px;*/
+/*padding: 0px;*/
+/*}*/
+/*上面的也可以这样写*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.top_content {
+    width: 75%;
+    height: 50px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+.body{
+    margin: 20px auto;
+    width: 75%;
+    height: 1500px;
+   background-color: antiquewhite;
+}
+.body_img{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+.body_content{
+    width: 100%;
+    height: 1100px;
+    background-color: blueviolet;
+}
+.body_no{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+.footing{
+    width: 75%;
+    height: 200px;
+    background-color: brown;
+    margin: 0px auto;
+}
+.footing_content{
+    width: 100%;
+    height: 125px;
+    background-color: olivedrab;
+}
+.footing_menu{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+}

@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    -webkit-transition: width 2s, height 2s, transform 2s; /*safari  chrome*/
+    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+}
+div:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+

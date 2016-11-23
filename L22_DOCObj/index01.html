@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Javascript-DOM操作CSS</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="div">
+    Hello
+</div>
+<button onclick="ondemo()">改变文字颜色和背景颜色</button>
+<script>
+    function ondemo() {
+        document.getElementById("div").style.backgroundColor = "red";
+        document.getElementById("div").style.color = "white";
+    }
+</script>
+</body>
+</html>

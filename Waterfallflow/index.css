@@ -1,0 +1,19 @@
+.container {
+    column-width: 200px;
+    -webkit-column-width: 200px;
+
+    column-gap: 10px;
+    -webkit-column-gap: 10px;
+    /*column-rule:  5px outset #ff5533 ;*/
+    /*-webkit-column-rule:5px outset #ff5533 ;*/
+}
+
+.container div {
+    height: auto;
+    background-color: azure;
+    margin: 5px 0;
+}
+
+.container p {
+    text-align: center;
+}

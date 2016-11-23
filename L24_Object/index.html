@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS内置对象-什么是对象</title>
+</head>
+<body>
+<!--创建对象-->
+<script>
+    people = new Object();
+    people.name = "Bruce常";
+    people.age = "24";
+    document.write("name:" + people.name + ", age:" + people.age);
+    // 另一种方式创建对象
+    person = {name: "Bruce Chang", age: "25"};
+    document.write("<br/>" + "name:" + person.name + ", age:" + person.age);
+    //使用函数来创建对象
+    function Son(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    son = new Son("Bruce Lee", 20);
+    document.write("<br/>name:" + son.name + ",age" + son.age);
+</script>
+</body>
+</html>

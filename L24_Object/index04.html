@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS内置对象-Math对象</title>
+</head>
+<body>
+<p id="p1">p1</p>
+<p id="p2">p1</p>
+<p id="p3">p3</p>
+<p id="p4">p4</p>
+<p id="p5">p5</p>
+<script>
+    document.getElementById("p1").innerHTML="2.49四舍五入："+Math.round(2.49)+"<br/>2.51四舍五入："+Math.round(2.51);
+    document.getElementById("p2").innerHTML="返回0~1之间的随机数："+Math.random();
+    document.getElementById("p3").innerHTML="返回最高值："+Math.max(10,11,22,44,65,435);
+    document.getElementById("p4").innerHTML="返回最低值："+Math.max(10,11,22,44,65,435);
+    document.getElementById("p5").innerHTML="返回绝对值："+Math.abs(-5);
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.p1{
+    color: blue;
+}
+.p2{
+    font-size: 30px;
+}
+.p1.p2{
+    background-color: antiquewhite;
+}

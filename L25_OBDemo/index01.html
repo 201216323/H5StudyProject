@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>js对象window计时器</title>
+</head>
+<!--在网页加载的时候执行方法-->
+<body onload="myWin()">
+
+<!--<button id="btn1" onclick="stopTime()">停止setInterval方法</button>-->
+<p id="ptime"></p>
+<button id="btn" onclick="stopWin()">停止setTimeout方法</button>
+<script>
+//    //间隔1秒执行getTime方法。
+//    var mytime = setInterval(function () {
+//        getTime();
+//    }, 1000);
+//    function getTime() {
+//        var d = new Date();
+//        var t = d.toLocaleTimeString();
+//        document.getElementById("ptime").innerHTML = t;
+//    }
+//    function stopTime() {
+//        clearInterval(mytime);
+//    }
+
+    var win;
+    function myWin() {
+        alert("hello");
+        //暂停指定的毫秒数执行，自己在调用自己。
+        win = setTimeout(function () {
+            myWin();
+        }, 3000);
+    }
+    function stopWin() {
+        clearTimeout(win);
+    }
+
+</script>
+</body>
+</html>

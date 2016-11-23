@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JSDOM对象控制HTML元素详解-2</title>
+</head>
+<body>
+
+<div id="div">
+    <p id="pid">div 的p元素</p>
+</div>
+<p>hahah</p>
+
+<p>hahah</p>
+
+<p>hahah</p>
+
+<p>hahah</p>
+<script>
+
+    //访问父节点。
+    function getParentNode() {
+        var div = document.getElementById("pid");
+        alert(div.parentNode.nodeName);
+    }
+//        getParentNode();  //方法1
+
+    //创建元素节点。
+    function creatNode() {
+        var body = document.body;
+        var input = document.createElement("input");
+        input.type = "button";
+        input.value = "按钮";
+        body.appendChild(input);
+    }
+//        creatNode();      //方法2
+
+
+    //插入节点
+    function addNode() {
+        var div = document.getElementById("div");
+        var node = document.getElementById("pid");
+        var newnode = document.createElement("p");
+        newnode.innerHTML = "动态添加的第一个p元素";
+        div.insertBefore(newnode, node);
+    }
+//        addNode();        //方法3
+
+    //删除节点
+    function removeNode() {
+        var div = document.getElementById("div");
+        var node = document.getElementById("pid");
+        div.removeChild(node);
+    }
+//        removeNode();     //方法4
+
+    //网页尺寸
+    function getSize() {
+        var offsetHeight = document.body.offsetHeight;
+        //也可以这样写，为了兼容
+        var offsetWidth = document.body.offsetWidth || document.documentElement.offsetWidth;
+        alert("宽：" + offsetWidth + "高" + offsetHeight);
+    }
+    getSize();        //方法5
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*代表通配符，后面的所有属性都会起作用*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*去掉默认li标签的黑点效果*/
+li {
+    list-style: none;
+}
+
+#div1 {
+    width: 360px;
+    height: 400px;
+    padding: 10px;
+    background-color: blue;
+    margin-left: 0px;
+}
+
+ul {
+    width: 120px;
+    height: 120px;
+    float: left;
+}

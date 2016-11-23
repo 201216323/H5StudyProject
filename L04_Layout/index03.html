@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>table元素布局</title>
+</head>
+<!--marginwidth和marginheight去掉外层白色的边框-->
+<body marginwidth="0px" marginheight="0px">
+<!--给出一个table，设置宽高和背景颜色-->
+    <table width="100%" height="500px" style="background-color: darkgray">
+        <tr >
+            <!--colspan占用3列-->
+            <td colspan="3" width="100%" height="10%" style="background-color: red">这是头部</td>
+        </tr>
+        <tr >
+            <td width="30%" height="80%" style="background-color: yellow">
+                <ol start="10">
+                    <li>IOS</li>
+                    <li>Android</li>
+                    <li>Html5</li>
+                </ol>
+            </td>
+            <td width="30%" height="80%" style="background-color: darkslategrey">中菜单</td>
+            <td width="40%" height="80%" style="background-color: blue">右菜单</td>
+        </tr>
+        <tr >
+            <td colspan=3" width="100%" height="10%" style="background-color: green">这是底部</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    background-color: green;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*未被点击和点击的时候*/
+a:link, a:visited {
+    /*文字变粗*/
+    font-weight: bold;
+    text-decoration: none;
+    /*成为块级元素*/
+    /*display: block;*/
+    background-color: black;
+   padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: aliceblue;
+    text-align: center;
+}
+/*鼠标放上去的变化*/
+a:active, a:hover {
+    background-color: crimson;
+}
+/*导航栏横向显示*/
+li {
+    display: inline;
+}
+
+
+
+

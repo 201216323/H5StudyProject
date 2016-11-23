@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>div布局</title>
+   <!--div标签可以不用加-->
+    <style type="text/css">
+        body{
+            margin: 0px;
+        }
+        div#container{
+            width: 100%;
+            height: 500px;
+            background-color: darkgray;
+        }
+        div#heading{
+            width: 100%;
+            height: 10%;
+            background-color: red;
+        }
+        div#content_menu{
+             width: 30%;
+             height: 80%;
+             background-color: yellow;
+            float: left;//加一个从左到右的排序方式
+         }
+        div#content_body{
+            width: 70%;
+            height: 80%;
+            background-color: blue;
+            float: left;//加一个从左到右的排序方式
+        }
+        div#footing{
+            width: 100%;
+            height: 10%;
+            background-color: green;
+            clear: both;//清除上面的浮动效果
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="heading">头部</div>
+        <div id="content_menu">内容菜单</div>
+        <div id="content_body">内容主体</div>
+        <div id="footing">底部</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+div {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    color: white;
+}
+.div2{
+    transform: translate(100px,100px);
+    -webkit-transform: translate(100px,100px); /*safari  chrome*/
+    -ms-transform: translate(100px,100px) ;/*IE*/
+    -o-transform: translate(100px,100px);/*opea*/
+    -moz-transform: translate(100px,100px);;/*Firefox*/
+}
+.div3{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); /*safari  chrome*/
+    -ms-transform: rotate(90deg) ;/*IE*/
+    -o-transform: rotate(90deg);/*opea*/
+    -moz-transform: rotate(90deg);;/*Firefox*/
+}
+.div4{
+    /*宽度变为原来2倍，高度不变*/
+    transform: scale(2,2);
+    -webkit-transform:scale(2,2); /*safari  chrome*/
+    -ms-transform: scale(2,2) ;/*IE*/
+    -o-transform: scale(2,2);/*opea*/
+    -moz-transform: scale(2,2);/*Firefox*/
+}
+.div5{
+    /*x轴倾斜，y轴倾斜*/
+    transform: skew(20deg,20deg);
+    -webkit-transform:skew(20deg,20deg); /*safari  chrome*/
+    -ms-transform: skew(20deg,20deg) ;/*IE*/
+    -o-transform: skew(20deg,20deg);/*opea*/
+    -moz-transform: skew(20deg,20deg);/*Firefox*/
+}
+
+.div6{
+    /*30 和30 为水平平移 和垂直平移的距离*/
+    transform: matrix(1,0,0,1,30,30);
+    -webkit-transform:matrix(1,0,0,1,30,30); /*safari  chrome*/
+    -ms-transform: matrix(1,0,0,1,30,30) ;/*IE*/
+    -o-transform: matrix(1,0,0,1,30,30);/*opea*/
+    -moz-transform: matrix(1,0,0,1,30,30);/*Firefox*/
+}

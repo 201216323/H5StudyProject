@@ -1,0 +1,20 @@
+#position1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+    /*向左偏移*/
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+#position2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    /*向左偏移*/
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}

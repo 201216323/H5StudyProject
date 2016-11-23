@@ -1,0 +1,23 @@
+/*p {*/
+    /*border-style: dotted;*/
+    /*border-top-style: none;*/
+    /*border-width: 10px;*/
+/*}*/
+
+p{
+    border-radius: 10px;
+    width: 200px;
+    background-color: aquamarine;
+    text-align: center;
+    border: 5px solid red;
+    padding: 10px;
+}
+#cssid{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /*//向右移动  向下移动 透明度  颜色*/
+    box-shadow: 10px 0px 10px #ff5533;
+}

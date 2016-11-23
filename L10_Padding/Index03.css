@@ -1,0 +1,11 @@
+body{
+    /*去掉默认的边距效果*/
+    margin: 0px;
+}
+.mg{
+    color: white;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+}

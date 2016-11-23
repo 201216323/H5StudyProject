@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS内置对象-Date日期对象</title>
+</head>
+<body onload="startTime()">
+
+<script>
+    var date = new Date();
+    document.write("<p></p>当前日期：" + date);
+    document.write("<p></p>获取年份getFullYear：" + date.getFullYear());
+    document.write("<p></p>获取时间毫秒数：" + date.getTime());
+    date.setFullYear(1994, 03, 11);
+    document.write("<p></p>当前日期：" + date);
+    document.write("<p></p>获取日期的日getDate：" + date.getDate());
+
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("timetxt").innerHTML = "<p></p>当前时间：" + h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+            //1000毫秒调一次startTime方法
+            startTime();
+        }, 1000);
+    }
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+</script>
+
+<div id="timetxt"></div>
+</body>
+</html>

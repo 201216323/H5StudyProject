@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS内置对象-Array数组对象</title>
+</head>
+<body>
+<p id="p1">p1</p>
+
+<p id="p2">p1</p>
+
+<p id="p3">p3</p>
+
+<p id="p4">p4</p>
+<script>
+    var a = ["1", "2", "3"];
+    var b = ["4", "5", "6"];
+    var c = a.concat(b);
+    document.getElementById("p1").innerHTML = "合并数组:" + c;
+    document.getElementById("p2").innerHTML = "排序:" + c.sort(function (a, b) {
+        return b-a;//a-b是正序，b-a是倒序
+    });
+    c.push("7")
+    document.getElementById("p3").innerHTML = "末尾追加元素hou正序:" + c.sort();
+    document.getElementById("p4").innerHTML = "数组元素翻转:" + c.reverse();
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    width: 500px;
+    height: auto;
+    background-color: azure;
+    /*控制分割的列数*/
+    column-count: 4;
+    -webkit-column-count: 4;
+    /*控制间隙的大小*/
+    -webkit-column-gap: 20px;
+    column-gap:20px;
+    /*控制分割线的宽度以及颜色*/
+    column-rule:2px outset #ff5533;
+    -webkit-column-rule:2px outset #ff5533 ;
+}
+

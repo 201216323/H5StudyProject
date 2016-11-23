@@ -1,0 +1,13 @@
+div {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    color: white;
+}
+.div2{
+    transform: rotateX(20deg);
+    -webkit-transform: rotateX(20deg); /*safari  chrome*/
+    -ms-transform: rotateX(20deg) ;/*IE*/
+    -o-transform: rotateX(20deg);/*opea*/
+    -moz-transform: rotateX(20deg);;/*Firefox*/
+}

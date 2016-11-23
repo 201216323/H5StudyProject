@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+/*11111*/
+.container{
+    background-color: #ff5533;
+    margin: 10px;
+}
+.bd{
+    border-style: dotted;
+}
+.pd{
+    padding: 10px;
+}
+.content{
+    background-color: blue;
+    color: white;
+}
+/*22222*/
+.container1{
+    background-color: aqua;
+    margin: 0px;
+}
+.bd1{
+    border-style: dotted;
+}
+.pd1{
+    padding: 10px;
+}
+.content1{
+    background-color: blue;
+    color: white;
+}

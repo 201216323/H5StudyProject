@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>块元素</title>
+    <!--引入css样式，有点像Android中的导包-->
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+    <style type="text/css">
+        /*指定为span元素*/
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--块元素在显示时候，通常会以新行开始-->
+<h1>大家好</h1>
+
+<p>大家好</p>
+<!--内联元素通常不会以新行开始-->
+<b>这是一个加重标签,</b>
+<a href="http://www.baidu.com">这是一个超链接标签</a>
+<!--div元素也别成为块元素，其主要是组合HTML元素的容器-->
+<div id="divid">
+    <p>
+        Hello jikexueyuan
+    </p>
+    <a>
+        点击我啊
+    </a>
+</div>
+<div id="divspan">
+    <p>
+        <!--span元素是内联元素，可作为文本的容器-->
+        <span> 这是一个测试效果</span>span是一个什么样子的呢
+    </p>
+</div>
+</body>
+</html>

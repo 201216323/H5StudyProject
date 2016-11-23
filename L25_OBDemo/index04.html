@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Screen对象</title>
+</head>
+<body>
+<button id="btn" onclick="getLoc()">按钮</button>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<script>
+    function getLoc() {
+        document.getElementById("p1").innerHTML = "可用宽度：" + window.screen.availWidth;
+        document.getElementById("p2").innerHTML = "可用高度：" + window.screen.availHeight;
+        document.getElementById("p3").innerHTML = "宽度：" + window.screen.width;
+        document.getElementById("p4").innerHTML = "高度：" + window.screen.height;
+    }
+</script>
+</body>
+</html>

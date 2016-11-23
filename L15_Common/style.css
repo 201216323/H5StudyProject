@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+}
+.div {
+    width: 70%;
+    height: 1000px;
+    background-color: red;
+    float: left;
+}
+
+/*.div {*/
+/*width: 70%;*/
+/*height: 1000px;*/
+/*background-color: red;*/
+/*0px代表上下  auto代表左右*/
+/*margin: 0px auto;*/
+/*}*/
+
+/*.div {*/
+    /*width: 70%;*/
+    /*height: 1000px;*/
+    /*background-color: red;*/
+    /*position: absolute;*/
+    /*right: 0px;*/
+/*}*/

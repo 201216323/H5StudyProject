@@ -1,0 +1,7 @@
+/*只有p元素才会变化*/
+#divid p{
+    color: aqua;
+}
+/*#divspan{*/
+    /*color: crimson;*/
+/*}*/

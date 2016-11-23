@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS内置对象-String字符串对象</title>
+</head>
+<body>
+<script>
+    var str = "hello  world!";
+    var str1 = "a,b,c,d,e,f,g";
+    document.write("字符串长度(带空格的)："+str.length);
+    document.write("<br/>索引字符串是否存在，输出的是所在位置，从0开始，没有返回-1"+str.indexOf("world"));
+    document.write("<br/>内容匹配（有返回该字符串，没有返回null）"+str.match("world"));
+    document.write("<br/>替换内容"+str.replace("hello","nihao"));
+    document.write("<br/>大小写转换"+str.toUpperCase());
+    var arr = str1.split(",");
+    document.write("<br/>字符串转数组后输出："+arr[2]);
+</script>
+</body>
+</html>

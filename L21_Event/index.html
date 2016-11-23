@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Javascript事件</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="changeDemo4(this)">
+<!--<button onclick="demo()">按钮</button>-->
+<!--<script>-->
+<!--function demo() {-->
+<!--alert("hello");-->
+<!--}-->
+<!--</script>-->
+
+<!--鼠标移出，鼠标经过的事件-->
+<!--<div class="div" onmouseout="onOut(this)" onmouseover="onOver(this)"></div>-->
+
+<script>
+    function onOver(ooj) {
+        ooj.innerHTML = "Hello";
+    }
+    function onOut(ooj) {
+        ooj.innerHTML = "World";
+    }
+
+</script>
+
+
+<!--输入账号密码的时候一般会用到-->
+<form>
+
+    <!--<input type="text" onchange="changeDemo(this)">-->
+
+    <!--文本框内容选中事件-->
+    <!--<input type="text" onselect="changeDemo2(this)" onfocus="changeDemo3(this)">-->
+
+    <!--光标聚集事件-->
+    <!--<input type="text" onfocus="changeDemo3(this)" onblur="changeDemo2(this)">-->
+</form>
+<script>
+    function changeDemo(bg) {
+        alert("Hello 内容改变了")
+    }
+    function changeDemo2(bg) {
+        bg.style.background = "red";
+    }
+    function changeDemo3(bg) {
+        bg.style.background = "blue";
+    }
+
+    function changeDemo4(bg) {
+        alert("网页加载完毕");
+    }
+</script>
+
+
+</body>
+</html>
